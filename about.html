@@ -1,42 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Learn about SUNARC SOLUTIONS, a solar energy infrastructure and installation solutions provider based in Pune, Maharashtra.">
+    <meta name="description"
+        content="Learn about SUNARC SOLUTIONS, a solar energy infrastructure and installation solutions provider based in Pune, Maharashtra.">
     <title>About Us | SUNARC SOLUTIONS</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header class="header">
+    <!-- Main Header -->
+    <header class="site-header">
         <div class="container navbar">
+
+            <!-- Logo -->
             <a href="index.html" class="logo">
-                <i class="fa-solid fa-solar-panel"></i>
-                SUNARC <span>SOLUTIONS</span>
+                <i class="fas fa-solar-panel"></i>
+                SunArc <span>Solutions</span>
             </a>
 
-            <nav class="nav-menu">
+            <!-- Navigation -->
+            <nav class="nav-menu" id="navMenu">
                 <a href="index.html">Home</a>
-                <a href="about.html" class="active">About Us</a>
+                <a href="about.html">About</a>
                 <a href="services.html">Services</a>
                 <a href="projects.html">Projects</a>
                 <a href="contact.html">Contact</a>
+                <a href="privacy-policy.html">Privacy Policy</a>
+                <a href="terms.html">Terms</a>
             </nav>
 
-            <a href="contact.html" class="btn btn-primary">
-                Get a Quote
+            <!-- Contact Button -->
+            <a href="contact.html" class="btn">
+                Get a Quote <i class="fas fa-arrow-right"></i>
             </a>
 
-            <button class="menu-toggle" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
+            <!-- Mobile Menu Toggle -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false"
+                aria-controls="navMenu">
+                <i class="fas fa-bars"></i>
             </button>
+
         </div>
     </header>
+
 
     <!-- Page Hero -->
     <section class="page-hero about-hero">
@@ -55,53 +67,97 @@
         </div>
     </section>
 
-    <!-- About Company -->
-    <section class="section about-section">
+
+    <!-- ABOUT COMPANY SECTION -->
+    <section class="section about-section" id="about">
         <div class="container about-grid">
 
-            <div class="about-image">
-                <img
-                    src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
-                    alt="Solar panels generating clean energy"
-                    loading="lazy">
+            <!-- About Image -->
+            <div class="about-image reveal">
+
+                <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1000&q=85"
+                    alt="Representative rooftop solar panel installation" loading="lazy">
+
                 <div class="image-caption">
                     <i class="fa-solid fa-leaf"></i>
-                    Building a Greener Tomorrow
+                    <span>
+                        <b>Building a Greener Tomorrow</b>
+                        <small>Powering a sustainable future</small>
+                    </span>
                 </div>
+
             </div>
 
-            <div class="about-content">
-                <span class="section-tag">About SUNARC SOLUTIONS</span>
-                <h2>Committed to Clean Energy and Reliable Infrastructure</h2>
+            <!-- About Content -->
+            <div class="about-content reveal">
+
+                <span class="section-tag">
+                    ABOUT SUNARC SOLUTIONS
+                </span>
+
+                <h2>
+                    Engineering a
+                    <span class="text-gold">Sustainable</span>
+                    Future Through Solar Energy
+                </h2>
+
+                <p class="about-lead">
+                    Practical solar energy solutions. Reliable infrastructure.
+                    A brighter tomorrow.
+                </p>
 
                 <p>
                     SUNARC SOLUTIONS is a solar energy and infrastructure
-                    solutions company based in Pune, Maharashtra. We focus
-                    on delivering practical solar solutions for residential,
-                    commercial, industrial and public utility requirements.
+                    solutions company headquartered in Pune, Maharashtra.
+                    We focus on supporting residential, commercial,
+                    industrial, and public utility energy requirements.
                 </p>
 
                 <p>
-                    Our approach combines project planning, installation
-                    support and infrastructure solutions to help customers
-                    move towards reliable and sustainable energy.
+                    Our approach combines project planning, engineering,
+                    installation support, and infrastructure solutions
+                    to help customers move towards dependable and
+                    sustainable energy.
                 </p>
 
                 <p>
-                    From turnkey solar installations to net metering
-                    infrastructure and government tender-related projects,
-                    we aim to support the growing clean energy ecosystem
+                    From solar installations and net metering infrastructure
+                    to government tender-related projects, we aim to
+                    contribute to the growing clean energy ecosystem
                     across Maharashtra.
                 </p>
 
+                <!-- Highlights -->
+                <div class="about-highlights">
+
+                    <div class="about-highlight">
+                        <i class="fa-solid fa-solar-panel"></i>
+                        <span>Solar Energy Solutions</span>
+                    </div>
+
+                    <div class="about-highlight">
+                        <i class="fa-solid fa-gears"></i>
+                        <span>Engineering Support</span>
+                    </div>
+
+                    <div class="about-highlight">
+                        <i class="fa-solid fa-leaf"></i>
+                        <span>Sustainable Approach</span>
+                    </div>
+
+                </div>
+
+                <!-- CTA -->
                 <a href="services.html" class="btn btn-primary">
                     Explore Our Services
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
+
             </div>
 
         </div>
     </section>
+
 
     <!-- Mission and Vision -->
     <section class="section mission-section">
@@ -193,10 +249,8 @@
             </div>
 
             <div class="why-image">
-                <img
-                    src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"
-                    alt="Solar energy infrastructure"
-                    loading="lazy">
+                <img src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?auto=format&fit=crop&w=1000&q=85"
+                    alt="Solar energy infrastructure" loading="lazy">
             </div>
 
         </div>
@@ -345,4 +399,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
