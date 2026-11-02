@@ -42,8 +42,7 @@ SUNARC-SOLUTIONS/
 ├── services.html
 ├── projects.html
 ├── contact.html
-├── privacy-policy.html
-├── terms.html
+├── legal.html
 │
 ├── css/
 │   └── style.css

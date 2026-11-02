@@ -1202,12 +1202,23 @@ button {
 .footer-logo {
     display: inline-flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     color: var(--white);
     font-family: 'Poppins', sans-serif;
-    font-size: 19px;
-    font-weight: 800;
+    font-size: 22px;
+    font-weight: 700;
     margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.footer-logo-img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+}
+
+.footer-logo-highlight {
+    color: #ffd700;
 }
 
 .footer-logo i {
@@ -1387,15 +1398,16 @@ textarea:focus-visible {
 
 /* Logo */
 .logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 9px;
+    gap: 10px;
     color: var(--primary);
     font-family: 'Poppins', sans-serif;
     font-size: 21px;
     font-weight: 800;
     white-space: nowrap;
     flex-shrink: 0;
+    text-decoration: none;
 }
 
 .logo i {
@@ -1403,8 +1415,24 @@ textarea:focus-visible {
     font-size: 27px;
 }
 
+.logo-img {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+}
+
 .logo span {
     color: var(--primary-light);
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo-text span {
+    color: #ffd700;
 }
 
 /* Desktop Navigation */
@@ -1488,460 +1516,6 @@ textarea:focus-visible {
     font-size: 26px;
     padding: 8px;
     cursor: pointer;
-}
-
-/* Tablet */
-@media (max-width: 992px) {
-    .navbar {
-        gap: 15px;
-    }
-
-    .nav-menu,
-    .nav-links {
-        gap: 15px;
-    }
-
-    .nav-menu a,
-    .nav-links a {
-        font-size: 12px;
-    }
-
-    .site-header .btn,
-    .header .btn {
-        padding: 10px 13px;
-        font-size: 12px;
-    }
-
-    .navbar>.btn {
-        padding: 11px 15px;
-        font-size: 12px;
-    }
-
-    #about {
-        padding: 75px 0;
-    }
-
-    #about .split {
-        gap: 45px;
-    }
-
-    .image-stack .main-photo {
-        height: 380px;
-    }
-
-    .image-badge {
-        right: -5px;
-        bottom: 40px;
-    }
-
-    .about-grid,
-    .why-grid {
-        gap: 35px;
-    }
-
-    .service-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .process-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
-    }
-}
-
-/* Mobile Navigation */
-@media (max-width: 768px) {
-
-    .announcement {
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
-        font-size: 11px;
-        gap: 5px 12px;
-    }
-
-    .section {
-        padding: 65px 0;
-    }
-
-    .navbar {
-        min-height: 70px;
-    }
-
-    .logo {
-        font-size: 18px;
-    }
-
-    .logo i {
-        font-size: 24px;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-
-    .site-header .navbar>.btn,
-    .header .navbar>.btn {
-        display: none;
-    }
-
-    .nav-menu,
-    .nav-links {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        display: none;
-        flex-direction: column;
-        align-items: stretch;
-        justify-content: flex-start;
-        gap: 0;
-        padding: 10px 5%;
-        background: var(--white);
-        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.10);
-        border-top: 1px solid var(--border);
-        max-height: calc(100vh - 110px);
-        overflow-y: auto;
-    }
-
-    .nav-menu.active,
-    .nav-links.active {
-        display: flex;
-    }
-
-    .nav-menu a,
-    .nav-links a {
-        display: block;
-        width: 100%;
-        padding: 14px 5px;
-        border-bottom: 1px solid var(--border);
-        font-size: 14px;
-    }
-
-    .nav-menu a::after,
-    .nav-links a::after {
-        display: none;
-    }
-
-    .nav-menu a:hover,
-    .nav-links a:hover {
-        padding-left: 12px;
-        background: var(--light);
-    }
-
-    .hero {
-        min-height: 520px;
-        background-position: 60% center;
-    }
-
-    .hero-content {
-        padding: 75px 0;
-    }
-
-    .hero p {
-        font-size: 15px;
-    }
-
-    .page-hero {
-        min-height: 260px;
-        padding: 60px 0;
-    }
-
-    #about {
-        padding: 65px 0;
-    }
-
-    #about .split {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .image-stack {
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 15px 15px 20px 0;
-    }
-
-    .image-stack .main-photo {
-        height: 340px;
-    }
-
-    .image-badge {
-        right: -5px;
-        bottom: 35px;
-        padding: 13px 16px;
-    }
-
-    .image-badge>i {
-        width: 42px;
-        height: 42px;
-        font-size: 19px;
-    }
-
-    .section-copy {
-        max-width: 100%;
-    }
-
-    .section-copy h2 {
-        font-size: 34px;
-    }
-
-    .section-copy .lead {
-        font-size: 17px;
-    }
-
-    .about-section {
-        padding: 60px 0;
-    }
-
-    .about-grid,
-    .why-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-    }
-
-    .about-image img,
-    .why-image img {
-        height: 330px;
-    }
-
-    .about-highlights {
-        grid-template-columns: 1fr;
-        gap: 13px;
-    }
-
-    .image-caption {
-        left: 12px;
-        bottom: 12px;
-        padding: 12px 15px;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 18px;
-    }
-
-    .project-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form-wrapper {
-        padding: 25px 20px;
-    }
-
-    .trust-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .footer-bottom .container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .footer-bottom div div {
-        justify-content: center;
-    }
-
-    .mt-40 {
-        margin-top: 28px;
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-
-    .announcement {
-        padding: 8px 3%;
-        font-size: 10px;
-    }
-
-    .container {
-        width: 92%;
-    }
-
-    .section {
-        padding: 55px 0;
-    }
-
-    .navbar {
-        min-height: 65px;
-    }
-
-    .logo {
-        font-size: 16px;
-    }
-
-    .logo i {
-        font-size: 22px;
-    }
-
-    .hero {
-        min-height: 480px;
-    }
-
-    .hero h1 {
-        font-size: 34px;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-buttons .btn {
-        width: 100%;
-    }
-
-    .page-hero h1 {
-        font-size: 30px;
-    }
-
-    .section-heading h2 {
-        font-size: 27px;
-    }
-
-    .image-stack .main-photo {
-        height: 280px;
-    }
-
-    .image-badge {
-        right: 0;
-        bottom: 25px;
-        gap: 9px;
-        padding: 11px 13px;
-    }
-
-    .image-badge b {
-        font-size: 13px;
-    }
-
-    .image-badge small {
-        font-size: 10px;
-    }
-
-    .section-copy h2 {
-        font-size: 30px;
-    }
-
-    .about-image img,
-    .why-image img {
-        height: 260px;
-    }
-
-    .image-caption {
-        left: 10px;
-        bottom: 10px;
-        font-size: 11px;
-        padding: 10px;
-    }
-
-    .service-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .service-card {
-        padding: 25px 20px;
-    }
-
-    .project-card img {
-        height: 220px;
-    }
-
-    .trust-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 18px 10px;
-    }
-
-    .trust-item {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .trust-item h3 {
-        font-size: 12px;
-    }
-
-    .process-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .contact-info {
-        padding: 30px 20px;
-    }
-
-    .contact-form-wrapper {
-        padding: 22px 16px;
-    }
-
-    .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 30px;
-    }
-
-    .footer {
-        padding-top: 45px;
-    }
-
-    .footer-bottom .container {
-        gap: 12px;
-    }
-
-    .footer-bottom p {
-        line-height: 1.8;
-    }
-
-    .menu-toggle {
-        font-size: 24px;
-    }
-
-    .photo-panel {
-        min-height: 290px;
-        border-radius: 12px;
-    }
-
-    .photo-caption {
-        left: 12px;
-        right: 12px;
-        bottom: 12px;
-        padding: 12px;
-    }
-
-    .caption-icon {
-        width: 40px;
-        height: 40px;
-    }
-
-    .photo-caption b {
-        font-size: 13px;
-    }
-
-    .photo-caption small {
-        font-size: 10px;
-    }
 }
 
 /* Accessibility */
@@ -2208,6 +1782,51 @@ textarea:focus-visible {
     line-height: 1.5;
 }
 
+/* =========================================
+   LEGAL PAGE
+========================================= */
+
+.legal-tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 55px;
+}
+
+.legal-content {
+    max-width: 900px;
+    margin: 0 auto;
+    scroll-margin-top: 100px;
+}
+
+.legal-content h2 {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.legal-content p,
+.legal-content li {
+    line-height: 1.8;
+}
+
+.legal-content ul {
+    padding-left: 25px;
+    margin: 15px 0;
+}
+
+.legal-content a {
+    color: var(--primary);
+    overflow-wrap: anywhere;
+}
+
+.legal-divider {
+    width: 100%;
+    height: 2px;
+    background-color: #1a1a1a;
+    margin: 40px 0;
+}
+
 /* Plus / Minus Icon */
 
 .faq-icon {
@@ -2312,77 +1931,6 @@ textarea:focus-visible {
     align-items: center;
     gap: 10px;
     white-space: nowrap;
-}
-
-/* Responsive */
-
-@media (max-width: 768px) {
-    .faq-section {
-        padding: 70px 0;
-    }
-
-    .faq-question {
-        gap: 12px;
-        padding: 16px;
-    }
-
-    .faq-title {
-        font-size: 14px;
-    }
-
-    .faq-answer p {
-        padding: 0 20px 20px 48px;
-        font-size: 13px;
-    }
-
-    .faq-contact {
-        flex-wrap: wrap;
-        padding: 22px;
-    }
-
-    .faq-contact-text {
-        min-width: 180px;
-    }
-
-    .faq-contact .btn {
-        width: 100%;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 480px) {
-    .faq-section {
-        padding: 55px 0;
-    }
-
-    .faq-section .section-heading {
-        margin-bottom: 30px;
-    }
-
-    .faq-question {
-        min-height: 68px;
-        gap: 9px;
-        padding: 13px;
-    }
-
-    .faq-number {
-        font-size: 11px;
-    }
-
-    .faq-title {
-        font-size: 13px;
-    }
-
-    .faq-icon {
-        width: 29px;
-        height: 29px;
-        font-size: 12px;
-    }
-
-    .faq-contact {
-        gap: 13px;
-        padding: 18px;
-    }
 }
 
 /* Accessibility */
@@ -2539,141 +2087,6 @@ textarea:focus-visible {
     line-height: 1.5;
 }
 
-/* Tablet */
-
-@media (max-width: 992px) {
-    .why-solar-section {
-        padding: 75px 0;
-    }
-
-    .why-solar-section .container.split {
-        gap: 32px;
-    }
-
-    .why-solar-section .photo-panel {
-        height: 480px;
-    }
-
-    .why-solar-section .feature-list {
-        gap: 20px;
-    }
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-    .why-solar-section {
-        padding: 60px 0;
-    }
-
-    .why-solar-section .container.split {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 36px;
-    }
-
-    .why-solar-section .section-copy {
-        order: 1;
-    }
-
-    .why-solar-section .photo-panel {
-        order: 2;
-        height: 380px;
-        border-radius: 20px;
-    }
-
-    .why-solar-section .section-copy h2 {
-        font-size: clamp(1.9rem, 6vw, 2.6rem);
-    }
-
-    .why-solar-section .feature-list {
-        gap: 22px;
-    }
-
-    .why-solar-section .btn {
-        max-width: 100%;
-        white-space: normal;
-        text-align: center;
-    }
-}
-
-/* Small mobile */
-
-@media (max-width: 480px) {
-    .why-solar-section {
-        padding: 45px 0;
-    }
-
-    .why-solar-section .container.split {
-        gap: 28px;
-    }
-
-    .why-solar-section .section-copy h2 {
-        font-size: 1.9rem;
-    }
-
-    .why-solar-section .why-intro {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
-
-    .why-solar-section .feature-item {
-        gap: 12px;
-    }
-
-    .why-solar-section .feature-icon {
-        flex-basis: 42px;
-        width: 42px;
-        height: 42px;
-        font-size: 18px;
-    }
-
-    .why-solar-section .feature-content h3 {
-        font-size: 1rem;
-    }
-
-    .why-solar-section .feature-content p {
-        font-size: 0.9rem;
-    }
-
-    .why-solar-section .photo-panel {
-        height: 290px;
-        border-radius: 16px;
-    }
-
-    .why-solar-section .photo-caption {
-        right: 10px;
-        bottom: 10px;
-        left: 10px;
-        gap: 10px;
-        padding: 12px;
-    }
-
-    .why-solar-section .caption-icon {
-        flex-basis: 38px;
-        width: 38px;
-        height: 38px;
-        font-size: 17px;
-    }
-
-    .why-solar-section .photo-caption b {
-        font-size: 0.9rem;
-    }
-
-    .why-solar-section .photo-caption small {
-        font-size: 0.75rem;
-    }
-
-    .why-solar-section .btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        width: 100%;
-        padding: 14px 16px;
-        font-size: 0.9rem;
-    }
-}
-
 /* ===============
    PROJECT GALLERY
 ================== */
@@ -2753,8 +2166,100 @@ textarea:focus-visible {
     line-height: 1.35;
 }
 
-/* Tablet and small laptop */
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .gallery-card img {
+        transition: none;
+    }
+
+    .gallery-card:hover img {
+        transform: none;
+    }
+}
+
+/* =========================================
+   TABLET & SMALL LAPTOP (MAX 992px)
+========================================= */
+
 @media (max-width: 992px) {
+
+    /* Navbar */
+    .navbar {
+        gap: 15px;
+    }
+
+    .nav-menu,
+    .nav-links {
+        gap: 15px;
+    }
+
+    .nav-menu a,
+    .nav-links a {
+        font-size: 12px;
+    }
+
+    .site-header .btn,
+    .header .btn {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+
+    .navbar>.btn {
+        padding: 11px 15px;
+        font-size: 12px;
+    }
+
+    /* About Section */
+    #about {
+        padding: 75px 0;
+    }
+
+    #about .split {
+        gap: 45px;
+    }
+
+    .image-stack .main-photo {
+        height: 380px;
+    }
+
+    .image-badge {
+        right: -5px;
+        bottom: 40px;
+    }
+
+    .about-grid,
+    .why-grid {
+        gap: 35px;
+    }
+
+    /* Services */
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Features */
+    .feature-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Why Solar Section */
+    .why-solar-section {
+        padding: 75px 0;
+    }
+
+    .why-solar-section .container.split {
+        gap: 32px;
+    }
+
+    .why-solar-section .photo-panel {
+        height: 480px;
+    }
+
+    .why-solar-section .feature-list {
+        gap: 20px;
+    }
+
+    /* Gallery */
     .gallery-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         grid-template-rows: 300px 260px;
@@ -2770,10 +2275,266 @@ textarea:focus-visible {
         bottom: 18px;
         left: 18px;
     }
+
+    /* Process */
+    .process-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-/* Mobile */
+/* =========================================
+   TABLET & MOBILE RESPONSIVE (MAX 768px)
+========================================= */
+
 @media (max-width: 768px) {
+
+    /* General */
+    .announcement {
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        font-size: 11px;
+        gap: 5px 12px;
+    }
+
+    .section {
+        padding: 65px 0;
+    }
+
+    .mt-40 {
+        margin-top: 28px;
+    }
+
+    /* Navbar */
+    .navbar {
+        min-height: 70px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .site-header .navbar>.btn,
+    .header .navbar>.btn {
+        display: none;
+    }
+
+    /* Mobile Navigation Menu */
+    .nav-menu,
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        gap: 0;
+        padding: 10px 5%;
+        background: var(--white);
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.10);
+        border-top: 1px solid var(--border);
+        max-height: calc(100vh - 110px);
+        overflow-y: auto;
+    }
+
+    .nav-menu.active,
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-menu a,
+    .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 14px 5px;
+        border-bottom: 1px solid var(--border);
+        font-size: 14px;
+    }
+
+    .nav-menu a::after,
+    .nav-links a::after {
+        display: none;
+    }
+
+    .nav-menu a:hover,
+    .nav-links a:hover {
+        padding-left: 12px;
+        background: var(--light);
+    }
+
+    /* Hero Section */
+    .hero {
+        min-height: 620px;
+        background-position: 60% center;
+    }
+
+    .hero-content {
+        padding: 90px 0 100px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 8vw, 56px);
+        letter-spacing: -1px;
+    }
+
+    .hero p,
+    .hero-content>p {
+        font-size: 15px;
+    }
+
+    .hero-shade {
+        background: rgba(5, 25, 39, 0.78);
+    }
+
+    /* Page Hero */
+    .page-hero {
+        min-height: 260px;
+        padding: 60px 0;
+    }
+
+    /* About Section */
+    #about {
+        padding: 65px 0;
+    }
+
+    #about .split {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .image-stack {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 15px 15px 20px 0;
+    }
+
+    .image-stack .main-photo {
+        height: 340px;
+    }
+
+    .image-badge {
+        right: -5px;
+        bottom: 35px;
+        padding: 13px 16px;
+    }
+
+    .image-badge>i {
+        width: 42px;
+        height: 42px;
+        font-size: 19px;
+    }
+
+    .section-copy {
+        max-width: 100%;
+    }
+
+    .section-copy h2 {
+        font-size: 34px;
+    }
+
+    .section-copy .lead {
+        font-size: 17px;
+    }
+
+    .about-section {
+        padding: 60px 0;
+    }
+
+    .about-grid,
+    .why-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .about-image img,
+    .why-image img {
+        height: 330px;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 13px;
+    }
+
+    .image-caption {
+        left: 12px;
+        bottom: 12px;
+        padding: 12px 15px;
+    }
+
+    /* Features */
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Why Solar Section */
+    .why-solar-section {
+        padding: 60px 0;
+    }
+
+    .why-solar-section .container.split {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+    }
+
+    .why-solar-section .section-copy {
+        order: 1;
+    }
+
+    .why-solar-section .photo-panel {
+        order: 2;
+        height: 380px;
+        border-radius: 20px;
+    }
+
+    .why-solar-section .section-copy h2 {
+        font-size: clamp(1.9rem, 6vw, 2.6rem);
+    }
+
+    .why-solar-section .feature-list {
+        gap: 22px;
+    }
+
+    .why-solar-section .btn {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+    /* Services */
+    .service-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+
+    /* Projects */
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery */
     .gallery-grid {
         grid-template-columns: minmax(0, 1fr);
         grid-template-rows: none;
@@ -2790,10 +2551,295 @@ textarea:focus-visible {
     .gallery-label b {
         font-size: 1.2rem;
     }
+
+    /* FAQ Section */
+    .faq-section {
+        padding: 70px 0;
+    }
+
+    .faq-question {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .faq-title {
+        font-size: 14px;
+    }
+
+    .faq-answer p {
+        padding: 0 20px 20px 48px;
+        font-size: 13px;
+    }
+
+    .faq-contact {
+        flex-wrap: wrap;
+        padding: 22px;
+    }
+
+    .faq-contact-text {
+        min-width: 180px;
+    }
+
+    .faq-contact .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Contact */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-form-wrapper {
+        padding: 25px 20px;
+    }
+
+    /* Trust Section */
+    .trust-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Footer */
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-bottom .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-bottom div div {
+        justify-content: center;
+    }
 }
 
-/* Small mobile */
+
+/* =========================================
+   SMALL MOBILE RESPONSIVE (MAX 480px)
+========================================= */
+
 @media (max-width: 480px) {
+
+    /* General */
+    .container {
+        width: 92%;
+    }
+
+    .section {
+        padding: 10px 0;
+    }
+
+    .announcement {
+        padding: 8px 3%;
+        font-size: 10px;
+    }
+
+    /* Navbar */
+    .navbar {
+        min-height: 65px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 20px;
+    }
+
+    .menu-toggle {
+        font-size: 24px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: 650px;
+    }
+
+    .hero-content {
+        padding-top: 80px;
+        padding-bottom: 90px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .hero-content>p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .eyebrow-light {
+        font-size: 10px;
+        letter-spacing: 1.3px;
+    }
+
+    .hero-buttons,
+    .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .hero-buttons .btn,
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .hero-note {
+        margin-top: 30px;
+    }
+
+    .scroll-cue {
+        bottom: 15px;
+    }
+
+    /* Page Hero */
+    .page-hero h1 {
+        font-size: 30px;
+    }
+
+    /* Section Headings */
+    .section-heading h2 {
+        font-size: 27px;
+    }
+
+    .section-copy h2 {
+        font-size: 30px;
+    }
+
+    /* About & Image Sections */
+    .image-stack .main-photo {
+        height: 280px;
+    }
+
+    .about-image img,
+    .why-image img {
+        height: 260px;
+    }
+
+    .image-caption {
+        left: 10px;
+        bottom: 10px;
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .image-badge {
+        right: 0;
+        bottom: 25px;
+        gap: 9px;
+        padding: 11px 13px;
+    }
+
+    .image-badge b {
+        font-size: 13px;
+    }
+
+    .image-badge small {
+        font-size: 10px;
+    }
+
+    /* Why Solar */
+    .why-solar-section {
+        padding: 45px 0;
+    }
+
+    .why-solar-section .container.split {
+        gap: 28px;
+    }
+
+    .why-solar-section .section-copy h2 {
+        font-size: 1.9rem;
+    }
+
+    .why-solar-section .why-intro {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .why-solar-section .feature-item {
+        gap: 12px;
+    }
+
+    .why-solar-section .feature-icon {
+        flex-basis: 42px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .why-solar-section .feature-content h3 {
+        font-size: 1rem;
+    }
+
+    .why-solar-section .feature-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Photo Panel */
+    .photo-panel,
+    .why-solar-section .photo-panel {
+        min-height: 290px;
+        height: 290px;
+        border-radius: 16px;
+    }
+
+    .photo-caption,
+    .why-solar-section .photo-caption {
+        left: 10px;
+        right: 10px;
+        bottom: 10px;
+        gap: 10px;
+        padding: 12px;
+    }
+
+    .caption-icon,
+    .why-solar-section .caption-icon {
+        flex-basis: 38px;
+        width: 38px;
+        height: 38px;
+        font-size: 17px;
+    }
+
+    .photo-caption b,
+    .why-solar-section .photo-caption b {
+        font-size: 0.9rem;
+    }
+
+    .photo-caption small,
+    .why-solar-section .photo-caption small {
+        font-size: 0.75rem;
+    }
+
+    .why-solar-section .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        padding: 14px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Services */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 25px 20px;
+    }
+
+    /* Projects */
+    .project-card img {
+        height: 220px;
+    }
+
+    /* Gallery */
     .gallery-grid {
         gap: 14px;
     }
@@ -2820,84 +2866,112 @@ textarea:focus-visible {
     .gallery-label b {
         font-size: 1.05rem;
     }
-}
 
-/* Respect reduced-motion preferences */
-@media (prefers-reduced-motion: reduce) {
-    .gallery-card img {
-        transition: none;
+    /* Trust Section */
+    .trust-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 10px;
     }
 
-    .gallery-card:hover img {
-        transform: none;
-    }
-}
-
-/* Tablet */
-@media (max-width: 768px) {
-    .hero {
-        min-height: 620px;
-    }
-
-    .hero-content {
-        padding-top: 90px;
-        padding-bottom: 100px;
-    }
-
-    .hero h1 {
-        font-size: clamp(38px, 8vw, 56px);
-        letter-spacing: -1px;
-    }
-
-    .hero-content>p {
-        font-size: 15px;
-    }
-
-    .hero-shade {
-        background: rgba(5, 25, 39, 0.78);
-    }
-}
-
-/* Small Mobile */
-@media (max-width: 480px) {
-    .hero {
-        min-height: 650px;
-    }
-
-    .hero-content {
-        padding-top: 80px;
-        padding-bottom: 90px;
-    }
-
-    .eyebrow-light {
-        font-size: 10px;
-        letter-spacing: 1.3px;
-    }
-
-    .hero h1 {
-        font-size: 38px;
-        line-height: 1.2;
-    }
-
-    .hero-content>p {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-
-    .hero-actions {
+    .trust-item {
         flex-direction: column;
-        align-items: stretch;
+        gap: 5px;
     }
 
-    .hero-actions .btn {
+    .trust-item h3 {
+        font-size: 12px;
+    }
+
+    /* Process */
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Contact */
+    .contact-info {
+        padding: 30px 20px;
+    }
+
+    .contact-form-wrapper {
+        padding: 22px 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 45px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-logo {
+        font-size: 18px;
+    }
+
+    .footer-logo-img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer-bottom .container {
+        gap: 12px;
+    }
+
+    .footer-bottom p {
+        line-height: 1.8;
+    }
+
+    .legal-tabs {
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 35px;
+    }
+
+    .legal-tabs .btn {
         width: 100%;
+        justify-content: center;
     }
 
-    .hero-note {
-        margin-top: 30px;
+    .legal-content h2 {
+        font-size: 20px;
     }
 
-    .scroll-cue {
-        bottom: 15px;
+    .legal-divider {
+        margin: 40px auto;
+    }
+
+    .faq-section {
+        padding: 55px 0;
+    }
+
+    .faq-section .section-heading {
+        margin-bottom: 30px;
+    }
+
+    .faq-question {
+        min-height: 68px;
+        gap: 9px;
+        padding: 13px;
+    }
+
+    .faq-number {
+        font-size: 11px;
+    }
+
+    .faq-title {
+        font-size: 13px;
+    }
+
+    .faq-icon {
+        width: 29px;
+        height: 29px;
+        font-size: 12px;
+    }
+
+    .faq-contact {
+        gap: 13px;
+        padding: 18px;
     }
 }
